@@ -10,17 +10,21 @@ namespace Prework_Calculator
     {
         static void Main(string[] args)
         {
+
+            // declaring the input of the user
             double num1 = 0; double num2 = 0;
-            Console.WriteLine("Console Calculator in C#");
+
+            // greating the user
+            Console.WriteLine("Super awesome Calculator");
             Console.WriteLine("");
 
-
+            //ask user for first number
             Console.Write("Type a number, than press enter: ");
             num1 = Convert.ToDouble(Console.ReadLine());
-
+            // ask user for secong number
             Console.WriteLine("Type another number, and then press enter: ");
             num2 = Convert.ToDouble(Console.ReadLine());
-
+            // Asking the user what they wanna do with these numbers
             Console.WriteLine("Choose from the following list: ");
             Console.WriteLine("\ta - Add");
             Console.WriteLine("\ts - Subtact");
@@ -28,6 +32,7 @@ namespace Prework_Calculator
             Console.WriteLine("\td - Divide");
             Console.Write("Your option?");
 
+            // statement to do math
             switch (Console.ReadLine())
             {
                 case "a":
@@ -47,6 +52,7 @@ namespace Prework_Calculator
                     break;
             }
 
+            // letting the user see the result than exit
             Console.Write("Press enter to close app bro bro");
             Console.ReadLine();
 
